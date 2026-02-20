@@ -1,0 +1,41 @@
+{
+  "name": "theme-resolver-per-day",
+  "version": "1.0.0",
+  "description": "A standalone, reusable module for resolving themes based on dates",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "theme",
+    "date",
+    "resolver",
+    "seasonal",
+    "holidays",
+    "cultural"
+  ],
+  "author": "StoryBookly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookly/theme-resolver-per-day.git"
+  },
+  "bugs": {
+    "url": "https://github.com/storybookly/theme-resolver-per-day/issues"
+  },
+  "homepage": "https://github.com/storybookly/theme-resolver-per-day#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "seasonal": [
+    {
+      "name": "new-year",
+      "rule": {
+        "kind": "range",
+        "from": "12-26",
+        "to": "01-07"
+      },
+      "metadata": {
+        "actualDate": "01-01",
+        "description": "New Year celebration period"
+      }
+    },
+    {
+      "name": "christmas",
+      "rule": {
+        "kind": "range",
+        "from": "11-25",
+        "to": "12-25"
+      },
+      "metadata": {
+        "actualDate": "12-25",
+        "description": "Christmas season"
+      }
+    },
+    {
+      "name": "winter",
+      "rule": {
+        "kind": "range",
+        "from": "01-08",
+        "to": "02-28"
+      },
+      "metadata": {
+        "description": "Winter season after New Year"
+      }
+    },
+    {
+      "name": "spring-beginning",
+      "rule": {
+        "kind": "range",
+        "from": "03-01",
+        "to": "03-20"
+      },
+      "metadata": {
+        "description": "Early spring period"
+      }
+    },
+    {
+      "name": "spring",
+      "rule": {
+        "kind": "range",
+        "from": "03-21",
+        "to": "05-31"
+      },
+      "metadata": {
+        "description": "Spring season"
+      }
+    },
+    {
+      "name": "summer-beginning",
+      "rule": {
+        "kind": "range",
+        "from": "06-01",
+        "to": "06-20"
+      },
+      "metadata": {
+        "description": "Early summer period"
+      }
+    },
+    {
+      "name": "summer-holiday",
+      "rule": {
+        "kind": "range",
+        "from": "06-21",
+        "to": "08-31"
+      },
+      "metadata": {
+        "description": "Summer vacation period"
+      }
+    },
+    {
+      "name": "back-to-school",
+      "rule": {
+        "kind": "range",
+        "from": "08-15",
+        "to": "09-15"
+      },
+      "metadata": {
+        "description": "Back to school season"
+      }
+    },
+    {
+      "name": "autumn",
+      "rule": {
+        "kind": "range",
+        "from": "09-16",
+        "to": "11-24"
+      },
+      "metadata": {
+        "description": "Autumn/Fall season"
+      }
+    }
+  ],
+  "holidays": [
+    {
+      "name": "halloween",
+      "rule": {
+        "kind": "range",
+        "from": "10-20",
+        "to": "10-31"
+      },
+      "metadata": {
+        "actualDate": "10-31",
+        "description": "Halloween celebration"
+      }
+    },
+    {
+      "name": "thanksgiving",
+      "rule": {
+        "kind": "nth-weekday",
+        "month": 11,
+        "weekday": 4,
+        "n": 4,
+        "duration": 7
+      },
+      "metadata": {
+        "description": "Thanksgiving (4th Thursday of November)"
+      }
+    },
+    {
+      "name": "easter",
+      "rule": {
+        "kind": "holiday-offset",
+        "holiday": "easter",
+        "start": -7,
+        "end": 1
+      },
+      "metadata": {
+        "description": "Easter celebration (calculated date)"
+      }
+    },
+    {
+      "name": "carnival",
+      "rule": {
+        "kind": "holiday-offset",
+        "holiday": "easter",
+        "start": -49,
+        "end": -46
+      },
+      "metadata": {
+        "description": "Carnival/Mardi Gras (before Easter)"
+      }
+    }
+  ],
+  "cultural": [
+    {
+      "name": "diwali",
+      "rule": {
+        "kind": "range",
+        "from": "10-20",
+        "to": "10-25"
+      },
+      "enabled": false,
+      "region": ["india", "global"],
+      "metadata": {
+        "description": "Festival of Lights (approximate dates)"
+      }
+    },
+    {
+      "name": "chinese-new-year",
+      "rule": {
+        "kind": "range",
+        "from": "01-21",
+        "to": "02-20"
+      },
+      "enabled": false,
+      "region": ["china", "global"],
+      "metadata": {
+        "description": "Chinese New Year (approximate dates)"
+      }
+    },
+    {
+      "name": "hanukkah",
+      "rule": {
+        "kind": "range",
+        "from": "11-25",
+        "to": "12-31"
+      },
+      "enabled": false,
+      "region": ["global"],
+      "metadata": {
+        "description": "Hanukkah (approximate dates)"
+      }
+    },
+    {
+      "name": "ramadan",
+      "rule": {
+        "kind": "range",
+        "from": "03-01",
+        "to": "04-30"
+      },
+      "enabled": false,
+      "region": ["global"],
+      "metadata": {
+        "description": "Ramadan (approximate dates, varies by lunar calendar)"
+      }
+    },
+    {
+      "name": "eid-celebration",
+      "rule": {
+        "kind": "range",
+        "from": "04-01",
+        "to": "05-15"
+      },
+      "enabled": false,
+      "region": ["global"],
+      "metadata": {
+        "description": "Eid celebration (approximate dates)"
+      }
+    },
+    {
+      "name": "holi",
+      "rule": {
+        "kind": "range",
+        "from": "02-25",
+        "to": "03-25"
+      },
+      "enabled": false,
+      "region": ["india", "global"],
+      "metadata": {
+        "description": "Holi - Festival of Colors (approximate dates)"
+      }
+    }
+  ],
+  "everyday": [
+    {
+      "name": "everyday",
+      "rule": {
+        "kind": "always"
+      },
+      "metadata": {
+        "description": "Default fallback theme"
+      }
+    }
+  ]
+}
