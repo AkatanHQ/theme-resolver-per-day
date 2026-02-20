@@ -5,7 +5,8 @@
  * Configuration is included internally - just pass a date and get themes.
  */
 
-import themeRulesConfig from './themeRules.json';
+import themeRulesConfigJson from './themeRules.json';
+const themeRulesConfig = themeRulesConfigJson as any;
 
 export type DateRule = 
   | { kind: 'range'; from: string; to: string }
@@ -39,6 +40,7 @@ export interface ResolverOptions {
 export interface ResolvedTheme {
   name: string;
   category: 'seasonal' | 'holidays' | 'cultural' | 'everyday';
+  rule: DateRule;
   metadata?: {
     actualDate?: string;
     description?: string;
@@ -106,6 +108,7 @@ export function resolveThemesForDate(
       matchingThemes.push({
         name: rule.name,
         category: rule.category,
+        rule: rule.rule,
         metadata: rule.metadata
       });
     }
@@ -127,6 +130,7 @@ export function resolveThemesForDate(
       matchingThemes.push({
         name: 'everyday',
         category: 'everyday',
+        rule: everydayRule.rule,
         metadata: everydayRule.metadata
       });
     }
