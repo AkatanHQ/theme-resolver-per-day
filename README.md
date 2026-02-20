@@ -4,8 +4,22 @@ A standalone, reusable module for resolving themes based on dates. Zero dependen
 
 ## Installation
 
+### From GitHub Packages
+
 ```bash
-npm install theme-resolver-per-day
+npm install @akatanhq/theme-resolver-per-day
+```
+
+**Note:** You need to configure npm to use GitHub Packages. Create or edit `.npmrc` in your project:
+
+```
+@akatanhq:registry=https://npm.pkg.github.com
+```
+
+Or install with full registry URL:
+
+```bash
+npm install @akatanhq/theme-resolver-per-day --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
@@ -13,7 +27,7 @@ npm install theme-resolver-per-day
 ### Simple Example
 
 ```typescript
-import { resolvePrimaryThemeForDate } from 'theme-resolver-per-day';
+import { resolvePrimaryThemeForDate } from '@akatanhq/theme-resolver-per-day';
 
 // Get today's theme
 const theme = resolvePrimaryThemeForDate(new Date());
@@ -24,7 +38,7 @@ console.log(theme);
 ### Get All Matching Themes
 
 ```typescript
-import { resolveThemesForDate } from 'theme-resolver-per-day';
+import { resolveThemesForDate } from '@akatanhq/theme-resolver-per-day';
 
 // Get all themes for Christmas
 const themes = resolveThemesForDate(new Date('2025-12-25'));
@@ -90,4 +104,4 @@ MIT
 
 ## Repository
 
-https://github.com/storybookly/theme-resolver-per-day
+https://github.com/akatanhq/theme-resolver-per-day

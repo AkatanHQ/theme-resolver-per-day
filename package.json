@@ -1,5 +1,5 @@
 {
-  "name": "theme-resolver-per-day",
+  "name": "@akatanhq/theme-resolver-per-day",
   "version": "1.0.0",
   "description": "A standalone, reusable module for resolving themes based on dates",
   "main": "dist/index.js",
@@ -22,16 +22,19 @@
     "holidays",
     "cultural"
   ],
-  "author": "StoryBookly",
+  "author": "AkatanHQ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookly/theme-resolver-per-day.git"
+    "url": "git@github.com:AkatanHQ/theme-resolver-per-day.git"
   },
   "bugs": {
-    "url": "https://github.com/storybookly/theme-resolver-per-day/issues"
+    "url": "https://github.com/akatanhq/theme-resolver-per-day/issues"
   },
-  "homepage": "https://github.com/storybookly/theme-resolver-per-day#readme",
+  "homepage": "https://github.com/akatanhq/theme-resolver-per-day#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "typescript": "^5.0.0"
   },
