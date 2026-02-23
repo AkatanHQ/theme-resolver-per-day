@@ -1,6 +1,6 @@
 {
   "name": "@akatanhq/theme-resolver-per-day",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A standalone, reusable module for resolving themes based on dates",
   "type": "module",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
@@ -34,10 +34,8 @@
     "url": "https://github.com/akatanhq/theme-resolver-per-day/issues"
   },
   "homepage": "https://github.com/akatanhq/theme-resolver-per-day#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "devDependencies": {
+    "rimraf": "^6.1.3",
     "typescript": "^5.0.0"
   },
   "engines": {
