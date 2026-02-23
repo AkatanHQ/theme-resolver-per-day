@@ -1,6 +1,6 @@
 {
   "name": "@akatanhq/theme-resolver-per-day",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A standalone, reusable module for resolving themes based on dates",
   "type": "module",
   "main": "dist/index.js",
