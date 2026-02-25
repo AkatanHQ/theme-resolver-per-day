@@ -28,12 +28,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:AkatanHQ/theme-resolver-per-day.git"
+    "url": "git@github.com:AkatanHQ/date-to-festive.git"
   },
   "bugs": {
-    "url": "https://github.com/akatanhq/theme-resolver-per-day/issues"
+    "url": "https://github.com/akatanhq/date-to-festive/issues"
   },
-  "homepage": "https://github.com/akatanhq/theme-resolver-per-day#readme",
+  "homepage": "https://github.com/akatanhq/date-to-festive#readme",
   "devDependencies": {
     "rimraf": "^6.1.3",
     "typescript": "^5.0.0"
